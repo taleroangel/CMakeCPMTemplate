@@ -18,6 +18,9 @@ project(
     HOMEPAGE_URL "https://github.com/taleroangel"
     LANGUAGES CXX
     )
+    
+# Append ./cmake directory to our include paths for the find_package scripts
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 # ---- CPM installation ---- #
 set(CPM_DOWNLOAD_VERSION 0.34.0)
